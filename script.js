@@ -6,6 +6,10 @@ const talkers = [
     {
         "name": "Lucas",
         "topic": "Twine"
+    },
+    {
+        "name": "Kilian",
+        "topic": "??"
     }
 ]
 
@@ -32,6 +36,14 @@ const topicsList = [
         "message": "Yeah, I screwed you guys up good didn't I !",
         "images": ["Images/twine-tt-one.jpg", "Images/twine-tt-two.jpg", "Images/twine-tt-three.jpg"],
         "finalMessage": "Play the game that is definitely 'NOT' rigged right over here: <a href='https://techtalk-dungeon.netlify.app/'>https://techtalk-dungeon.netlify.app/</a>"
+    },
+    {
+        "author": "Kilian",
+        "topic": "??",
+        "link": "https://??",
+        "message": "???????????????????????????????????????????",
+        "images": ["??"],
+        "finalMessage": "Play the game that is definitely 'NOT' rigged right over here: <a href='https://techtalk-dungeon.netlify.app/'>https://techtalk-dungeon.netlify.app/</a>"
     }
 ]
 
@@ -54,11 +66,11 @@ function loadTopicPage(topic) {
         topicImages.innerHTML += "<img class='contentImg' src="+ image +" alt=''><br>"
     })
 
-    topicPage.innerHTML = "<h2>"+ topicContent.topic +"</h2><br>" + 
-    "<a href="+ topicContent.link + ">"+ topicContent.link +"</a><br><br>" +
-    "<p>"+ topicContent.message +"</p><br>" +
-    "<div class='contentImages'>" +
-    topicImages.innerHTML +
-    "</div><br>" +
-    "<p>"+ topicContent.finalMessage +"</p>"
+    topicPage.innerHTML =   "<h2>"+ topicContent.topic +"</h2><br>" + 
+                            "<a href="+ topicContent.link + ">"+ topicContent.link +"</a><br><br>" +
+                            "<p>"+ topicContent.message +"</p><br>" +
+                            "<div class='contentImages'>" +
+                                topicImages.innerHTML +
+                            "</div><br>" +
+                            "<p>"+ topicContent.finalMessage +"</p>"
 }
