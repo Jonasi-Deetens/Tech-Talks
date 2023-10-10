@@ -9,7 +9,7 @@ const talkers = [
     },
     {
         "name": "Kilian",
-        "topic": "??"
+        "topic": "AI Regulations"
     }
 ]
 
@@ -39,11 +39,12 @@ const topicsList = [
     },
     {
         "author": "Kilian",
-        "topic": "??",
+        "topic": "AI Regulations",
         "link": "https://??",
-        "message": "???????????????????????????????????????????",
-        "images": ["??"],
-        "finalMessage": "Play the game that is definitely 'NOT' rigged right over here: <a href='https://techtalk-dungeon.netlify.app/'>https://techtalk-dungeon.netlify.app/</a>"
+        "message": "Let's make AI do anything we want, F*CK the system. Or guess not :'(.",
+        "images": ["Images/aireg-tt-one.jpg", "Images/aireg-tt-two.jpg", "Images/aireg-tt-three.jpg", "Images/aireg-tt-four.jpg", "Images/aireg-tt-five.jpg"
+        , "Images/aireg-tt-six.jpg", "Images/aireg-tt-seven.jpg", "Images/aireg-tt-eight.jpg"],
+        "finalMessage": "AI regulations are saying no to all you cheeky bastards!"
     }
 ]
 
@@ -58,7 +59,6 @@ talkers.forEach((talker) => {
 
 function loadTopicPage(btn) {
     const buttons = document.querySelectorAll(".navButton");
-    console.log(buttons)
     buttons.forEach((button) => {
         button.classList.remove("selectedButton");
     })
