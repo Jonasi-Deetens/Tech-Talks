@@ -53,20 +53,26 @@ const topicPage = document.querySelector(".content");
 
 talkers.forEach((talker) => {
     const listItem = document.createElement("li");
-    listItem.innerHTML = "<button class='navButton' value="+ talker.topic +" onclick='loadTopicPage(this)'>" + talker.name + " - " + talker.topic + "</button>";
+    const button = document.createElement('button');
+    button.innerText = talker.name + " - " + talker.topic;
+    button.classList.add("navButton");
+    button.addEventListener("click", () => {
+        loadTopicPage(talker);
+        button.classList.add("selectedButton");
+    }); 
+    listItem.appendChild(button);
     talkersUl.appendChild(listItem);
 })
 
-function loadTopicPage(btn) {
+function loadTopicPage(talker) {
     const buttons = document.querySelectorAll(".navButton");
     buttons.forEach((button) => {
         button.classList.remove("selectedButton");
     })
 
     let topicContent = topicsList.find(function (t) {
-        return t.topic === btn.value;
+        return t.topic === talker.topic;
     });
-    btn.classList.add("selectedButton");
 
     let topicImages = document.createElement("div");
     topicContent.images.forEach((image) => {
