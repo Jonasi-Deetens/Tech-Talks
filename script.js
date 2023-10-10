@@ -17,7 +17,7 @@ const topicsList = [
     {
         "author": "Home",
         "topic": "TechTalk",
-        "link": "",
+        "link": "https://about.gitlab.com/blog/2022/10/04/what-makes-a-great-tech-talk/",
         "message": "What are Tech Talks ?",
         "images": ["Images/tt-logo.png"],
         "finalMessage": "<p>The simple answer is: I don't know. An excellent tech talk isn't definable and solvable like an engineering problem. It's part tech, part passion, part storytelling, and part luck. But in thinking about speakers and talks that I've looked up to throughout the years, I believe that I've found a few key ingredients in any tech talk that I've seen and would consider 'great.' In reviewing these, I actually came to appreciate what I somewhat already knew: the 'tech' part of the talk is probably the least important part of a great tech talk. Yet, as professionals, that is what we get wrapped around. And it is what worries us when writing a speech. The best demo ever - that's what will save my talk! But in the end, it's not just the tech content that counts, so let's look at the five critical ingredients for a great tech talk:</p><br>" +
@@ -52,14 +52,21 @@ const topicPage = document.querySelector(".content");
 
 talkers.forEach((talker) => {
     const listItem = document.createElement("li");
-    listItem.innerHTML = "<button value="+ talker.topic +" onclick='loadTopicPage(value)'>" + talker.name + " - " + talker.topic + "</button>";
+    listItem.innerHTML = "<button class='navButton' value="+ talker.topic +" onclick='loadTopicPage(this)'>" + talker.name + " - " + talker.topic + "</button>";
     talkersUl.appendChild(listItem);
 })
 
-function loadTopicPage(topic) {
+function loadTopicPage(btn) {
+    const buttons = document.querySelectorAll(".navButton");
+    console.log(buttons)
+    buttons.forEach((button) => {
+        button.classList.remove("selectedButton");
+    })
+
     let topicContent = topicsList.find(function (t) {
-        return t.topic === topic;
+        return t.topic === btn.value;
     });
+    btn.classList.add("selectedButton");
 
     let topicImages = document.createElement("div");
     topicContent.images.forEach((image) => {
