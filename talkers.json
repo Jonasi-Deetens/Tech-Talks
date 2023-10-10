@@ -1,0 +1,16 @@
+{
+    "talkers": [
+        {
+            "name": "Home",
+            "topic": "TechTalk"
+        },
+        {
+            "name": "Lucas",
+            "topic": "Twine"
+        },
+        {
+            "name": "Kilian",
+            "topic": "AI Regulations"
+        }
+    ]
+}
