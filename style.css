@@ -36,11 +36,6 @@ ul {
     text-align: left;
 }
 
-ul a {
-    color: white;
-    text-decoration: none;
-}
-
 main {
     display: flex;
     flex-direction: row;
