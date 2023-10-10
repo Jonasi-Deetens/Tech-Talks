@@ -1,24 +1,34 @@
-import talkersJSON from './talkers.json' assert { type: 'json' };
-import topicsJSON from './topics.json' assert { type: 'json' }
+fetch("./talkers.json")
+  .then((res) => res.json())
+  .then((data) => {
+    createTalkersList(data.talkers)
+});
 
-const talkers = talkersJSON.talkers
-const topicsList = topicsJSON.topics
+var topicsList;
+fetch("./topics.json")
+  .then((res) => res.json())
+  .then((data) => {
+    topicsList = data.topics;
+});
 
 const talkersUl = document.querySelector(".talkersList");
 const topicPage = document.querySelector(".content");
 
-talkers.forEach((talker) => {
-    const listItem = document.createElement("li");
-    const button = document.createElement('button');
-    button.innerText = talker.name + " - " + talker.topic;
-    button.classList.add("navButton");
-    button.addEventListener("click", () => {
-        loadTopicPage(talker);
-        button.classList.add("selectedButton");
-    }); 
-    listItem.appendChild(button);
-    talkersUl.appendChild(listItem);
-})
+function createTalkersList(talkers) {
+    talkers.forEach((talker) => {
+        const listItem = document.createElement("li");
+        const button = document.createElement('button');
+        button.innerText = talker.name + " - " + talker.topic;
+        button.classList.add("navButton");
+        button.addEventListener("click", () => {
+            loadTopicPage(talker);
+            button.classList.add("selectedButton");
+        }); 
+        listItem.appendChild(button);
+        talkersUl.appendChild(listItem);
+    })
+}
+
 
 function loadTopicPage(talker) {
     const buttons = document.querySelectorAll(".navButton");
