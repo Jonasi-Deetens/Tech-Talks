@@ -27,6 +27,15 @@
             "images": ["Images/aireg-tt-one.jpg", "Images/aireg-tt-two.jpg", "Images/aireg-tt-three.jpg", "Images/aireg-tt-four.jpg", "Images/aireg-tt-five.jpg"
             , "Images/aireg-tt-six.jpg", "Images/aireg-tt-seven.jpg", "Images/aireg-tt-eight.jpg"],
             "finalMessage": "AI regulations are saying no to all you cheeky bastards!"
+        },
+        {
+            "author": "Alec",
+            "topic": "Auto-GPT",
+            "link": "https://autogpt.net/",
+            "linkMessage": "auto GPT",
+            "message": "The future is nigh",
+            "images": [""],
+            "finalMessage": "I'm using Auto-GPT for the rest of this course now!"
         }
     ]
 }

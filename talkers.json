@@ -11,6 +11,10 @@
         {
             "name": "Kilian",
             "topic": "AI Regulations"
+        },
+        {
+            "name": "Alec",
+            "topic": "Auto-GPT"
         }
     ]
 }
