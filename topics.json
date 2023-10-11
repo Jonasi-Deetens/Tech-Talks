@@ -34,7 +34,7 @@
             "link": "https://autogpt.net/",
             "linkMessage": "auto GPT",
             "message": "The future is nigh",
-            "images": [""],
+            "images": ["Images/auto-tt-one.png", "Images/auto-tt-two.png", "Images/auto-tt-three.png", "Images/auto-tt-four.png", "Images/auto-tt-five.png", "Images/auto-tt-six.png"],
             "finalMessage": "I'm using Auto-GPT for the rest of this course now!"
         }
     ]
