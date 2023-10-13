@@ -15,6 +15,14 @@
         {
             "name": "Alec",
             "topic": "Auto-GPT"
+        },
+        {
+            "name": "Mohamed",
+            "topic": "Metaverse"
+        },
+        {
+            "name": "Pieter",
+            "topic": "??"
         }
     ]
 }

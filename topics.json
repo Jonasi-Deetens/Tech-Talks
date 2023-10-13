@@ -25,7 +25,7 @@
             "linkMessage": "regulations on AI",
             "message": "'My topic, isn't the most exciting' - Kilian <br> -> Proceeds to start a philosophical discussion.",
             "images": ["Images/aireg-tt-one.jpg", "Images/aireg-tt-two.jpg", "Images/aireg-tt-three.jpg", "Images/aireg-tt-four.jpg", "Images/aireg-tt-five.jpg"
-            , "Images/aireg-tt-six.jpg", "Images/aireg-tt-seven.jpg", "Images/aireg-tt-eight.jpg"],
+                , "Images/aireg-tt-six.jpg", "Images/aireg-tt-seven.jpg", "Images/aireg-tt-eight.jpg"],
             "finalMessage": "AI regulations are saying no to all you cheeky bastards!"
         },
         {
@@ -36,6 +36,26 @@
             "message": "The future is nigh",
             "images": ["Images/auto-tt-one.png", "Images/auto-tt-two.png", "Images/auto-tt-three.png", "Images/auto-tt-four.png", "Images/auto-tt-five.png", "Images/auto-tt-six.png"],
             "finalMessage": "I'm using Auto-GPT for the rest of this course now!"
+        },
+        {
+            "author": "Mohamed",
+            "topic": "Metaverse",
+            "link": "https://about.meta.com/metaverse/",
+            "linkMessage": "metaverse",
+            "message": "We believe in the future of connection in the metaverse",
+            "images": ["Images/meta-tt-one.jpeg", "Images/meta-tt-two.jpeg", "Images/meta-tt-three.jpeg", "Images/meta-tt-four.jpeg", "Images/meta-tt-five.jpeg"
+                , "Images/meta-tt-six.jpeg", "Images/meta-tt-seven.jpeg", "Images/meta-tt-eight.jpeg", "Images/meta-tt-nine.jpeg"],
+            "finalMessage": "See you online soon!"
+        },
+        {
+            "author": "Pieter",
+            "topic": "??",
+            "link": "#",
+            "linkMessage": "??.html",
+            "message": "Probably gonna hack us",
+            "images": ["Images/meta-tt-one.jpeg", "Images/meta-tt-two.jpeg", "Images/meta-tt-three.jpeg", "Images/meta-tt-four.jpeg", "Images/meta-tt-five.jpeg"
+                , "Images/meta-tt-six.jpeg", "Images/meta-tt-seven.jpeg", "Images/meta-tt-eight.jpeg", "Images/meta-tt-nine.jpeg"],
+            "finalMessage": "Or rick roll!"
         }
     ]
 }
