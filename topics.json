@@ -49,13 +49,13 @@
         },
         {
             "author": "Pieter",
-            "topic": "??",
-            "link": "#",
-            "linkMessage": "??.html",
-            "message": "Probably gonna hack us",
+            "topic": "Little Big Mouse",
+            "link": "https://github.com/mgth/LittleBigMouse",
+            "linkMessage": "little mouse or BIG?",
+            "message": "Smooth mouse transitions between screens, you can lose it tho",
             "images": ["Images/meta-tt-one.jpeg", "Images/meta-tt-two.jpeg", "Images/meta-tt-three.jpeg", "Images/meta-tt-four.jpeg", "Images/meta-tt-five.jpeg"
                 , "Images/meta-tt-six.jpeg", "Images/meta-tt-seven.jpeg", "Images/meta-tt-eight.jpeg", "Images/meta-tt-nine.jpeg"],
-            "finalMessage": "Or rick roll!"
+            "finalMessage": "He really didn't rick roll us in his presentation?"
         }
     ]
 }
