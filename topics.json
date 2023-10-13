@@ -52,9 +52,8 @@
             "topic": "Little Big Mouse",
             "link": "https://github.com/mgth/LittleBigMouse",
             "linkMessage": "little mouse or BIG?",
-            "message": "Smooth mouse transitions between screens, you can lose it tho",
-            "images": ["Images/meta-tt-one.jpeg", "Images/meta-tt-two.jpeg", "Images/meta-tt-three.jpeg", "Images/meta-tt-four.jpeg", "Images/meta-tt-five.jpeg"
-                , "Images/meta-tt-six.jpeg", "Images/meta-tt-seven.jpeg", "Images/meta-tt-eight.jpeg", "Images/meta-tt-nine.jpeg"],
+            "message": "Smooth mouse transitions between screens. You can lose it tho..",
+            "images": ["Images/little-tt-one.png", "Images/little-tt-two.png", "Images/little-tt-three.jfif"],
             "finalMessage": "He really didn't rick roll us in his presentation?"
         }
     ]
